@@ -12,17 +12,16 @@ function factorial(n) {
   return n * factorial(n - 1);
 }
 factorial(10);
-// 10
-// 9
-// 8
-// 7
-// 6
-// 5
-// 4
-// 3
-// 2
-// 1
-// 3628800
+// 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 = // 3628800
+
+function factorialize(num) {
+  if(num === 0) {
+    return 1;
+  }
+  return num * factorialize(num - 1);
+}
+
+
 
 
 function factorial(n) {
@@ -53,6 +52,63 @@ factorial(6);
 // 1
 // 720
 
+for (var i = 0; i < array.length; i++) {
+  array[i]
+}
+
+// Amortication table - is a data table that shows the process of aying off a loan, with details for every payment. For each month, an amortization table provides your loan balance, interest charges on your loan balance, interest charges on your loan, and the amount of principal that you pay off.
+
+// Monthly payment, inteset expenses, principal repayment, cumulative interest, extra payments, fees beside interest
+
+// the process of paying down a loan is called “amortization
+
+// Progress Loan Repayment Calculator
+//
+
+
+function mlrc(repaymentAmount : amount , interestRate : interest) {
+  let ca = amount * interest;
+  let Namount = amount - ca;
+  Math.round(Namount * 100) / 100;
+  if (Namount < 1) {
+    console.log(Namount);
+  } else {
+    console.log(Namount);
+    return c(Namount, 0.25);
+  }
+}
+mlrc(100, 0.25);
+
+
+cal = (a, b) => {
+  let a;
+  let c = a * b;
+
+  d = a - c;
+  let d = Math.round(a * 100 ) / 100;
+  if (a < 0) {
+    console.log('repaid');
+  } else {
+    console.log(d, a);
+    return cal(d, b);
+  }
+}
+
+
+monthyRepaymentCal = (nsum) => {
+  let interest = 0.04;
+  let amountBorrow = nsum;
+
+  if (amountBorrow < 0) {
+    console.log('Repaid');
+  } else {
+     let repayment = amountBorrow * interest;
+     let nsum = amountBorrow - repayment;
+    console.log(nsum);
+  return monthyRepaymentCal(nsum);
+  }
+}
+monthyRepaymentCal(100000);
 
 
 // Iterative recursion
