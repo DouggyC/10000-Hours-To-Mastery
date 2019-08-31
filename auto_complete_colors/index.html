@@ -10,17 +10,29 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="assets/rainbow.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Color Finder</title>
+    <title>Colorful Planet</title>
   </head>
   <body>
     <div class="container my-1" id="wrapper">
       <div class="card">
         <div class="card-body">
-          <div class="card-title display-4 mx-auto">Color Finder</div>
+          <div id="heading-title" class="card-title display-4 mx-auto d-inline">
+            Colorful Planet
+          </div>
+          <div class="d-inline">
+            <a
+              href="https://www.flaticon.com/authors/mynamepong"
+              title=" Icon made by mynamepong"
+            >
+              <img src="assets/rainbow.png" style="height: 3em;" class="mb-4" />
+            </a>
+          </div>
+
           <div class="card-text my-2">
             <i
-              >Sandbox proof of concept: Search with predictive auto complete.
+              >Simple proof of concept: Search with predictive auto complete.
               Click to copy a color feature. Copy as rgba or hex value.</i
             >
           </div>
@@ -32,7 +44,7 @@
             </div>
             <div class="col-md-7 border border-danger">
               <form class="form-inline">
-                <div class="form-group mx-auto mt-1">
+                <div id="search-group" class="form-group mx-auto mt-1">
                   <label for="input"
                     ><i>Search Color Name / #hex code: </i>
                   </label>
@@ -42,6 +54,8 @@
                     class="form-control ml-2"
                     onkeyup="predictiveSearch()"
                     placeholder="Sky Blue / #87CEEB"
+                    autocomplete="off"
+                    autofocus
                   />
                 </div>
               </form>

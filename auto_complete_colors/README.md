@@ -1,12 +1,18 @@
-# Color Finder
+# Colorful Planet
 
 ##### Description:
 
-A simple app for finding color: name, #hex or rgba value of a color.
+A Simple color finding application. Search by color: name, #hex or rgba value of a color. Built in plain javaScript.
+
+## [Live Demo](https://colorfulplanet.netlify.com)
+
+https://colorfulplanet.netlify.com
+
+---
 
 ###### Proof of concept:
 
-To mimics a color database with predictive search.
+Mimicing a color database with predictive search.
 
 ---
 
@@ -77,3 +83,4 @@ Range selector input
 - [ ] Saved colors list using localStorage
 - [ ] Randomize feature
 - [ ] rgba state, onChange features
+- [ ] reset button

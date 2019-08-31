@@ -50,6 +50,13 @@ td {
   text-align: center;
 }
 
+#rgbaInput {
+  cursor: pointer;
+}
+#alertInput {
+  cursor: pointer;
+}
+
 .slider {
   width: 90%;
   appearance: none;
@@ -72,4 +79,13 @@ footer {
   /* position: absolute; */
   /* bottom: 0; */
   color: gray;
+}
+
+@media (max-width: 991px) {
+  #search-group {
+    display: block;
+  }
+  #heading-title {
+    font-size: 2.5em;
+  }
 }
