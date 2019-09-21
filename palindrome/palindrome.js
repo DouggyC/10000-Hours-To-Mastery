@@ -1,14 +1,9 @@
-
-
-let p = "level";
+let p = 'level';
 
 // function palin(p) {
 //   let str = p.split('').reverse().join('');
 //   console.log(str);
 // }
-
-
-
 
 // function palin(p) {
 //   let str = p.split('').reverse().join('');
@@ -21,29 +16,34 @@ let p = "level";
 
 // palin(p);
 
-palindrome = (str) => {
-  let a = str, b = a;
-  if (a.split('').reverse().join('') && b.split('').reverse().join('')) {
-    console.log(a , b);
+palindrome = str => {
+  if (!str) {
+    alert('Input cannot be empty or undefined, Please Enter valid word');
+  } else if (
+    str
+      .split('')
+      .reverse()
+      .join('') === str
+  ) {
+    alert(`${str} is a palindrome`);
   }
-}
-
+};
 
 palindrome(p);
 
-
-
 // * Note browser runs synchronously, and does not function hoist
 
-
-
 // Function that validates if string is palindrome, removing whitespace and grammar, toLowerCase.
-isPalindrome = (stringToTest) => {
-    let str = stringToTest.replace(/\s|,/g,'').toLowerCase();
-    return str === str.split('').reverse().join('');
-}
-
-
+isPalindrome = stringToTest => {
+  let str = stringToTest.replace(/\s|,/g, '').toLowerCase();
+  return (
+    str ===
+    str
+      .split('')
+      .reverse()
+      .join('')
+  );
+};
 
 /* Removes format string -
       white space , comma, quote, exclimation, back tick = \s
@@ -54,16 +54,28 @@ isPalindrome = (stringToTest) => {
       return boolean ==  str split and reverse and joined is palindrome
 */
 
-(typeof str !== 'string') 
+typeof str !== 'string';
 
-isPalindrome = (str) => {
+isPalindrome = str => {
   if (str === null) {
     return false;
   } else {
-    let a = str.replace(/\s|,|'|!|`|[$-/:-?{-~!"^_`\[\]]/g,'').toLowerCase();
+    let a = str.replace(/\s|,|'|!|`|[$-/:-?{-~!"^_`\[\]]/g, '').toLowerCase();
     console.log(a);
-    return a == a.split('').reverse().join('');
+    return (
+      a ==
+      a
+        .split('')
+        .reverse()
+        .join('')
+    );
   }
-}
+};
 
-isPalindrome = s => s === null ? false : (s = s.toLowerCase().replace(/\W/g, '')).split('').reverse().join('') == s;
+isPalindrome = s =>
+  s === null
+    ? false
+    : (s = s.toLowerCase().replace(/\W/g, ''))
+        .split('')
+        .reverse()
+        .join('') == s;
