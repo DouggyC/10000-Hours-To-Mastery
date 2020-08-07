@@ -2,9 +2,11 @@
 let a, b;
 [a, b] = [100, 200];
 console.log(a, b); // 100, 200
+
 //-- Spread Operator, returns array with rest objects
 [a, b, ...rest] = [100, 200, 300, 400, 500];
 console.log(rest); // [300 , 400, 500]
+
 //-- Spread operator can also return object
 ({ a, b, ...rest } = { a: 100, b: 200, c: 300, d: 400, e: 500 });
 console.log(a, b, rest); // 100 200 { c: 300, d: 400, e: 500 }
@@ -32,6 +34,7 @@ const person = {
     console.log("Hello");
   }
 };
+
 //-- Old ES5
 // const name = person.name,
 //       age = person.age,
